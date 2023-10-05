@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="John Doe">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Radio Station</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    
+    <body>
+
+    <header>
+        <h1>DJ Dashboard</h1>
+        <!-- Move the search bar to the right of the header -->
+        <nav>
+            <button class="nav-button">Home</button>
+            <button class="nav-button">Playlist Editor</button>
+            <button class="nav-button">Schedule</button>
+            <button class="nav-button">Settings</button>
+        </nav>
+
+        <input type="text" id="search-bar" placeholder="Search..."> <!--Search Bar-->
+
+    </header>
+    <!-- SMedia Player -->
+    <div class="player">
+            <div>
+                <input type="range" value="0" id="player-progress-bar"> 
+                <div class="player-controls">
+                    <div><i class="fa-solid fa-backward"></i></div>
+                    <div><i class="fa-solid fa-play"></i></div>
+                    <div><i class="fa-solid fa-forward"></i></div>
+                </div>
+            </div>
+    </div>
+
+    <!-- Playlist search-->
+    <div class="section schedule">
+        <div class="container" style="align-items: center;">
+            <h1 style="text-align: center;">Search Playlists</h1>
+            <div class="input">
+                <div class="textfield-1 textfield-2">
+                    <div class="text-1">Search by Name</div>
+                </div>
+            </div>
+            <div class="button">
+                <div class="secondary">
+                    <div class="title-black">View Past</div>
+                </div>
+                <div class="primary">
+                    <div class="title-white">Add Playlist</div>
+                </div>
+            </div>
+            
+        </div> 
+        
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <h1 style="text-align: center;">Available Time Slots</h1>
+            <label for="timeslot">Select a Timeslot:</label>
+            <select id="timeslot">
+                <option value="morning">Morning</option>
+                <option value="afternoon">Afternoon</option>
+                <option value="evening">Evening</option>
+            </select>
+        
+            <!-- Display the playlist in a table -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Timeslot</th>
+                        <th>Playlist</th>
+                    </tr>
+                </thead>
+                <tbody id="playlistContainer">
+                    <!-- Playlist content will be displayed here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div>   
+        <h1 style="text-align: center;">Up Coming Dates</h1>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <h2>Events</h2>
+            <div>
+                <img src="images/Temp playlist.jpg" alt="img" class="playlist-img">
+                <div>
+                    <h3>Event Name</h3>
+                    <p>Host: </p>
+                    <p>Genre: Genre Name</p>
+                    <p>Main Playlist:</p>
+                </div>
+            </div>
+            <div>
+                <img src="images/Temp playlist2.jpg" alt="img" class="playlist-img">
+                <div>
+                    <h3>Event Name</h3>
+                    <p>Host: </p>
+                    <p>Genre: Genre Name</p>
+                    <p>Main Playlist: </p>
+                </div>
+            </div>
+            <!-- Add more tracks as needed -->
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+    </body>
+</html>
