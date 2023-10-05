@@ -1,6 +1,7 @@
 # SWE432-RadioStation
 Radio Station project 
 Name: Khoa Nguyen
+Group #: 19
 G#:009869001
 Mason Email: knguye61@gmu.edu
 
