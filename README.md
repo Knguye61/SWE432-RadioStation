@@ -1,4 +1,4 @@
-# SWE432-RadioStation
+# SWE432-RadioStation-Group19
 Radio Station project 
 Name: Khoa Nguyen
 Group #: 19
