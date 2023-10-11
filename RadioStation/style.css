@@ -269,3 +269,20 @@ select {
   box-shadow: 0 10px 60px rgba(249, 246, 246, 0.469);
 
 }
+
+/*Flex Box for Upcoming dates and time slots*/
+
+.flex-schedules {
+  display: flex;
+  width: 50%;
+}
+
+.flex-schedules-childs {
+  flex: 1;
+  border: 2px solid rgb(58, 58, 58);
+  margin: 10px;
+}
+
+.flex-schedules-childs:first-child {
+  margin-right: 20px;
+}
