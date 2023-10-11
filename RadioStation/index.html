@@ -15,11 +15,14 @@
     <header>
         <h1>DJ Dashboard</h1>
         <!-- Move the search bar to the right of the header -->
-        <nav>
-            <button class="nav-button">Home</button>
-            <button class="nav-button">Playlist Editor</button>
-            <button class="nav-button">Schedule</button>
-            <button class="nav-button">Settings</button>
+        <nav class="dropdown">
+            <button class="nav-button"><a href="">Home</a></button>
+            <button class="nav-button"><a href="">Playlist Editor</a></button>
+            <button class="nav-button"><a href="">Schedule</a></button>
+            <button class="nav-button"><a href="">Settings</a></button>
+                <ul id="submenu">
+                    <li><a href="">test</a></li>
+                </ul>
         </nav>
 
         <input type="text" id="search-bar" placeholder="Search..."> <!--Search Bar-->
