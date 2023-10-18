@@ -20,9 +20,6 @@
             <button class="nav-button"><a href="">Playlist Editor</a></button>
             <button class="nav-button"><a href="">Schedule</a></button>
             <button class="nav-button"><a href="">Settings</a></button>
-                <ul id="submenu">
-                    <li><a href="">test</a></li>
-                </ul>
         </nav>
 
         <input type="text" id="search-bar" placeholder="Search..."> <!--Search Bar-->
@@ -46,7 +43,7 @@
             <h1 style="text-align: center;">Search Playlists</h1>
             <div class="input">
                 <div class="textfield-1 textfield-2">
-                    <div class="text-1">Search by Name</div>
+                    <input type="text" id="text-1" placeholder="Search by Name">
                 </div>
             </div>
             <div class="button">
@@ -62,6 +59,7 @@
         
     </div>
 
+<!-- Timeslot section -->
     <div class="section">
         <div class="container">
             <h1 style="text-align: center;">Time Slots</h1>
@@ -81,13 +79,14 @@
                         <th>Reserved By</th>
                     </tr>
                 </thead>
-                <tbody id="playlistContainer">
+                <tbody id="timeslotContainer">
                     <!-- Playlist content will be displayed here -->
                 </tbody>
             </table>
         </div>
     </div>
 
+<!-- Upcoming Dates Section -->
     <div>   
         <h1 style="text-align: center;">Up Coming Dates</h1>
     </div>

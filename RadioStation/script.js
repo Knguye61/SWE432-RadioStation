@@ -5,17 +5,20 @@ document.getElementById("timeslot").addEventListener("change", function () {
 
     var playlistData = getPlaylistData(selectedTimeslot);
 
-    // Display the playlist in the playlistContainer table
-    var playlistContainer = document.getElementById("playlistContainer");
-    playlistContainer.innerHTML = "";
 
-    // Create table rows for each song
+    // Display the playlist in the timeslotContainer table
+    var timeslotContainer = document.getElementById("timeslotContainer");
+    timeslotContainer.innerHTML = "";
+
+    // Create table rows for each timeslot
     for (var i = 0; i < playlistData.length; i++) {
-        var row = playlistContainer.insertRow(i);
+        var row = timeslotContainer.insertRow(i);
         var cell1 = row.insertCell(0);
         var cell2 = row.insertCell(1);
+        var cell3 = row.insertCell(2);
         cell1.textContent = selectedTimeslot;
         cell2.textContent = playlistData[i];
+        cell3.textContent = getdjData(row, "Reserve");
     }
 });
 
@@ -28,4 +31,20 @@ function getPlaylistData(timeslot) {
     };
 
     return playlists[timeslot] || [];
+}
+
+function getdjData(row, buttonText) {
+    const cell = document.createElement("td");
+    const button = document.createElement("button");
+    button.textContent = buttonText;
+    
+    // Add an event handler to the button if needed
+    button.addEventListener("click", function() {
+        // Handle button click event here
+        prompt("Enter name");
+        // You can access the row data if necessary
+    });
+
+    cell.appendChild(button);
+    row.appendChild(cell);
 }
