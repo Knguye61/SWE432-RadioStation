@@ -1,29 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Free Web tutorials">
-        <meta name="keywords" content="HTML, CSS, JavaScript">
-        <meta name="author" content="John Doe">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Radio Station</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <%- include('../partials/head'); %>
     </head>
     
     <body>
 
     <header>
-        <h1>DJ Dashboard</h1>
-        <!-- Move the search bar to the right of the header -->
-        <nav class="dropdown">
-            <button class="nav-button" onclick="alert('return to home!')"><a href="">Home</a></button>
-            <button class="nav-button" onclick="alert('opening editor!')"><a href="">Playlist Editor</a></button>
-            <button class="nav-button" onclick="alert('opening schedules')"><a href="">Schedule</a></button>
-            <button class="nav-button" onclick="alert('opening settins')"><a href="">Settings</a></button>
-        </nav>
-
-        <input type="text" id="search-bar" placeholder="Search..."> <!--Search Bar-->
-
+        <%- include('../partials/header'); %>
     </header>
     <!-- SMedia Player -->
     <div class="player">
@@ -116,6 +100,6 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="../../js/script.js"></script>
     </body>
 </html>
